@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- START SCROLL -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+        });
+    </script>
+
+    <!-- END SCROLL -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -165,7 +198,7 @@
     <!-- FOOTER -->
     <footer>
         <p>Nice to meet you!</p>
-        <p><a href="#" target="_blank"><i class="fab fa-git-square"></i></a> <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></p>
+        <p><a href="https://github.com/matheustontini" target="_blank"><i class="fab fa-git-square"></i></a> <a href="https://www.linkedin.com/in/matheus-tontini/" target="_blank"><i class="fab fa-linkedin-in"></i></a></p>
         <p id="copyright">Copyright @ Matheus Tontini 2019</p>
     </footer>
     <!-- END FOOTER -->
