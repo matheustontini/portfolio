@@ -26,10 +26,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    -o-animation: fadein 3s; /* Opera */
     h1 {
         font-size: 4rem;
         text-transform: uppercase;
@@ -77,15 +73,18 @@ section:nth-child(even){
             justify-content: space-around;
             align-items: center;
         }
+        .myskills {
+            min-height: 80vh;
+        }
     }
 }
 .circle_skill {
     border-radius: 50%;
-    width: 240px;
+    width: 220px;
     background: linear-gradient(180deg, rgba(7,123,240,1) 0%, rgba(5,171,227,1) 81%, rgba(0,212,255,1) 100%);
-    height: 240px;
+    height: 220px;
     color: #ffffff;
-    margin: 20px 10px 20px 10px;
+    margin: 20px 5px 20px 5px;
     font-size: 2rem;
     p {
         text-align: center;
@@ -227,37 +226,3 @@ footer {
     font-size: 0.8rem;
 }
 
-
-/* Animations */
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}

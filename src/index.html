@@ -1,39 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- START SCROLL -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-            
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-                } // End if
-            });
-        });
-    </script>
-
-    <!-- END SCROLL -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -43,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
     <link rel="icon" href="/img/fav_icon.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
     <header id="home">
         <div class="content">
-            <div class="apresentation">
+            <div class="apresentation" data-aos="fade-right">
                 <div>
                     <h1>Matheus Tontini</h1>
                     <p>
@@ -74,50 +42,57 @@
     <section id="skills">
         <div class="content">
             <h2>My Skills</h2>
-            <div>
-                <div class="circle_skill">
+            <div class="myskills">
+                <div class="circle_skill" data-aos="zoom-in">
                     <p>
                         <i class="fab fa-html5"></i><br>
                         HTML<br>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     </p>
                 </div>
-                <div class="circle_skill">
+                <div class="circle_skill" data-aos="zoom-in">
                     <p>
                         <i class="fab fa-css3-alt"></i><br>
                         CSS<br>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
                     </p>
                 </div>
-                <div class="circle_skill">
+                <div class="circle_skill" data-aos="zoom-in">
+                    <p>
+                        <i class="fab fa-bootstrap"></i><br>
+                        Bootstrap<br>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </p>
+                </div>
+                <div class="circle_skill" data-aos="zoom-in">
                     <p>
                         <i class="fas fa-code"></i><br>
                         jQuery<br>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                     </p>
                 </div>
-                <div class="circle_skill">
+                <div class="circle_skill" data-aos="zoom-in">
                     <p>
                         <i class="fab fa-js-square"></i><br>
                         JavaScript<br>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                     </p>
                 </div>
-                <div class="circle_skill"> 
+                <div class="circle_skill" data-aos="zoom-in"> 
                     <p>
                         <i class="fab fa-react"></i><br>
                         React<br>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                     </p>
                 </div>
-                <div class="circle_skill"> 
+                <div class="circle_skill" data-aos="zoom-in"> 
                     <p>
                         <i class="fab fa-php"></i><br>
                         PHP<br>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                     </p>
                 </div>
-                <div class="circle_skill"> 
+                <div class="circle_skill" data-aos="zoom-in"> 
                     <p>
                         <i class="fab fa-laravel"></i><br>
                         Laravel<br>
@@ -134,22 +109,22 @@
         <div class="content">
             <h2>My Portfolio</h2>
             <div class="projects">
-                <div class="portfolio_item" id="portfolio_item_1">
+                <div class="portfolio_item" id="portfolio_item_1" data-aos="fade-up-left">
                     <p><a href="#" tagert="_blank">HTML, CSS, BOOTSTRAP, JAVASCRIPT</a></p>
                 </div>
-                <div class="portfolio_item" id="portfolio_item_2">
+                <div class="portfolio_item" id="portfolio_item_2" data-aos="fade-up-left">
                     <p><a href="#" tagert="_blank">HTML, CSS, JAVASCRIPT, REACT, PHP</a></p>
                 </div>
-                <div class="portfolio_item" id="portfolio_item_3">
+                <div class="portfolio_item" id="portfolio_item_3" data-aos="fade-up-left">
                     <p><a href="#" tagert="_blank">HTML, CSS, JAVASCRIPT, PHP</a></p>
                 </div>
-                <div class="portfolio_item" id="portfolio_item_4">
+                <div class="portfolio_item" id="portfolio_item_4" data-aos="fade-up-left">
                     <p><a href="#" tagert="_blank">HTML, CSS, JAVASCRIPT, PHP, LARAVEL</a></p>
                 </div>
-                <div class="portfolio_item" id="portfolio_item_5">
+                <div class="portfolio_item" id="portfolio_item_5" data-aos="fade-up-left">
                     <p><a href="#" tagert="_blank">HTML, CSS, JAVASCRIPT, JQUERY, PHP, LARAVEL</a></p>
                 </div>
-                <div class="portfolio_item" id="portfolio_item_6">
+                <div class="portfolio_item" id="portfolio_item_6" data-aos="fade-up-left">
                     <p><a href="#" tagert="_blank">HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT, PHP, LARAVEL</a></p>
                 </div>
             </div>    
@@ -162,10 +137,10 @@
         <div class="content">
             <h2>About me</h2>
             <div class="projects">
-                <div class="me">
+                <div class="me" data-aos="zoom-in-right">
                     <img src="img/me.jpg" alt="Matheus Tontini">
                 </div>
-                <div class="me">
+                <div class="me" data-aos="zoom-in-left">
                     <p><strong>My name is Matheus Tontini</strong>. I am a full stack web developer and enjoy learning new trends. <strong>I am developing user interfaces in JavaScript and React and back-end of my projects in PHP and Laravel.</strong></p>
                     <p>I am open to learning new technologies and enjoy working with people whe are as passionate about all web-related as me.</p>
                     <p>I have worked for clients all across the world but currently I am based in Prague, Czech Republic.</p>
@@ -180,7 +155,7 @@
     <section id="contact">
         <div class="content">
             <h2>Contact me</h2>
-            <div class="projects">
+            <div class="projects" data-aos="fade-up">
                 <form action="action_page.php" method="post">
                     <input type="text" name="first_name" placeholder="First name*" class="form_contact" required>
                     <input type="text" name="last_name" placeholder="Last name*" class="form_contact" required>
@@ -202,5 +177,39 @@
         <p id="copyright">Copyright @ Matheus Tontini 2019</p>
     </footer>
     <!-- END FOOTER -->
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+    
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                    event.preventDefault();
+    
+                // Store hash
+                var hash = this.hash;
+    
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+        });
+        AOS.init();
+    </script>
+
 </body>
 </html>
